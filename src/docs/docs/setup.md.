@@ -1,0 +1,120 @@
+# Project Setup and Installation Guide
+
+## 1. Introduction
+
+This document explains how to set up, configure, and run the ESP32-based Electrical Fault Detection and IoT Monitoring System.
+
+The project uses the Arduino IDE for programming and an ESP32 development board for embedded processing and wireless communication.
+
+## 2. Requirements
+
+### Hardware Requirements
+
+* ESP32 development board
+* Voltage sensor
+* Current sensor
+* Temperature sensor
+* 0.96-inch I2C OLED display
+* DC power supply
+* Load resistor
+* Breadboard or suitable circuit assembly
+* Connecting wires
+* USB cable compatible with the ESP32 board
+
+### Software Requirements
+
+* Arduino IDE
+* ESP32 board support package
+* Required sensor libraries
+* OLED display library
+* Blynk IoT platform
+* Internet connection for IoT communication
+
+## 3. Arduino IDE Installation
+
+1. Download and install the Arduino IDE.
+2. Open the Arduino IDE.
+3. Install ESP32 board support through Boards Manager.
+4. Select the appropriate ESP32 development board.
+5. Connect the ESP32 to the computer using a USB cable.
+6. Select the correct COM port.
+
+## 4. Library Installation
+
+Install the libraries required by the project.
+
+The required libraries depend on the exact sensors and display modules used.
+
+Refer to the source code for the complete list of dependencies.
+
+## 5. IoT Configuration
+
+The project uses Blynk IoT for remote monitoring.
+
+1. Create a Blynk account.
+2. Create a device template.
+3. Configure the required data streams.
+4. Create the dashboard widgets.
+5. Obtain the device credentials.
+6. Configure the ESP32 code using the appropriate credentials.
+
+Do not publish private authentication tokens or Wi-Fi passwords in the repository.
+
+## 6. Uploading the Code
+
+1. Open `src/main.ino` in the Arduino IDE.
+2. Verify the selected ESP32 board.
+3. Configure the required Wi-Fi and IoT credentials.
+4. Connect the ESP32 to the computer.
+5. Select the correct port.
+6. Compile the program.
+7. Upload the program to the ESP32.
+8. Open the Serial Monitor.
+9. Verify that the ESP32 starts successfully.
+
+## 7. Running the Prototype
+
+1. Check all circuit connections.
+2. Ensure the supply voltage is within the permitted range.
+3. Power the prototype.
+4. Observe the sensor measurements on the Serial Monitor.
+5. Verify the OLED display output.
+6. Open the IoT dashboard.
+7. Confirm that the available measurements and status indicators are updated.
+
+## 8. Troubleshooting
+
+### ESP32 is not detected
+
+* Check the USB cable.
+* Verify the USB port.
+* Check whether the required USB driver is installed.
+* Confirm that the correct board and port are selected.
+
+### OLED display is blank
+
+* Verify the SDA and SCL connections.
+* Check the display power supply.
+* Verify the I2C address.
+* Run an I2C scanner if required.
+
+### Sensor values are incorrect
+
+* Verify the sensor wiring.
+* Check the sensor output voltage.
+* Confirm the ADC pin configuration.
+* Verify the calibration constants.
+* Check the sensor specifications.
+
+### IoT dashboard is not updating
+
+* Verify the Wi-Fi connection.
+* Check the Blynk credentials.
+* Confirm the data stream configuration.
+* Verify that the ESP32 is transmitting data.
+
+## 9. Safety
+
+Always disconnect the supply before modifying the circuit.
+
+Use only the specified low-voltage DC supply for the prototype. Do not connect the experimental circuit directly to mains electricity or high-voltage transmission lines.
