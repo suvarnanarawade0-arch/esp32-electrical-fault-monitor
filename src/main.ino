@@ -1,6 +1,6 @@
 #define BLYNK_TEMPLATE_ID "TMPL31aW9lxQ4"
 #define BLYNK_TEMPLATE_NAME "Electrical Fault Monitoring"
-#define BLYNK_AUTH_TOKEN "tjH4nP0SphMuT7w2BMhOl6ZsqFZL1qN2"
+#define BLYNK_AUTH_TOKEN "your_auth_code"
 
 #define BLYNK_PRINT Serial
 
