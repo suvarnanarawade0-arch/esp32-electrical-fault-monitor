@@ -149,3 +149,15 @@ Add the datasheets, technical documentation, research papers, and other sources 
 ## 18. License
 
 Specify the license applicable to the project.
+
+## Documentation
+
+* [Hardware Connections](hardware/pin-connections.md)
+* [Project Setup Guide](docs/setup.md)
+* [Testing and Experimental Results](docs/test-results.md)
+* [Detailed Technical Report](docs/technical-report.md)
+
+## Project Repository
+
+This repository contains the source code, hardware documentation, experimental results, and technical report for the ESP32-based Electrical Fault Detection and IoT Monitoring System.
+
