@@ -1,0 +1,61 @@
+# Hardware Connections and Circuit Description
+
+## 1. Overview
+
+The prototype uses an ESP32 development board as the main processing unit. It receives electrical measurements from the connected sensors, processes the data, identifies abnormal operating conditions, and communicates the system status to the user.
+
+The prototype is implemented using a low-voltage DC supply for demonstration and testing.
+
+## 2. Hardware Components
+
+| Component                  | Function                                      |
+| -------------------------- | --------------------------------------------- |
+| ESP32 development board    | Main controller and Wi-Fi communication       |
+| Voltage sensor             | Measures the supply voltage                   |
+| Current sensor             | Measures the current flowing through the load |
+| Temperature sensor         | Monitors temperature                          |
+| 0.96-inch I2C OLED display | Displays measurements and system status       |
+| DC power supply            | Supplies power to the prototype               |
+| Load resistor              | Acts as the electrical load                   |
+| Connecting wires           | Establish electrical connections              |
+
+## 3. Circuit Connections
+
+The ESP32 is connected to the voltage, current, and temperature sensors. The sensor outputs are processed by the microcontroller.
+
+The OLED display communicates with the ESP32 through the I2C interface.
+
+The prototype uses a DC supply and a suitable load to demonstrate electrical monitoring and fault detection.
+
+### Pin Configuration
+
+| Component                 | ESP32 Pin     | Description                |
+| ------------------------- | ------------- | -------------------------- |
+| Voltage sensor output     | [GPIO number] | Analog voltage measurement |
+| Current sensor output     | [GPIO number] | Analog current measurement |
+| Temperature sensor output | [GPIO number] | Temperature measurement    |
+| OLED SDA                  | [GPIO number] | I2C data                   |
+| OLED SCL                  | [GPIO number] | I2C clock                  |
+| Sensor supply             | [Voltage]     | Sensor power               |
+| Ground                    | GND           | Common reference           |
+
+Replace the placeholders with the actual connections used in the prototype.
+
+## 4. Power Supply
+
+The prototype is powered using a low-voltage DC supply.
+
+The ESP32 and sensors must operate within their specified voltage and current limits. Sensor outputs connected to ESP32 analog inputs must remain within the permitted input voltage range.
+
+The circuit must be disconnected from the power supply before changing wiring or replacing components.
+
+## 5. Circuit Diagram
+
+The final circuit diagram is available at:
+
+`circuit-diagram.png`
+
+## 6. Safety Note
+
+This prototype is intended for low-voltage DC experimentation. It is not designed or certified for direct connection to AC transmission lines, mains electricity, or high-voltage electrical infrastructure.
+
